@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Code Camp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1 id="title">ABC Auto Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" >
+        <fieldset>
+            <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+            <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required></label>
+            <label id="number-label">Age <input id="number" type="number" placeholder="Age" min="10" max="100" required></label>
+            <label for="referrer">How did you hear about us?
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Social Media</option>
+                    <option value="2">Radio</option>
+                    <option value="3">TV</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+          <label for="feature">What is your favorite feature?</label>
+          <label for="navigation"><input type="radio" id="navigation" value="navigation" class="inline" name="radio-group"> Navigation</label>
+            <label for="ABS"><input type="radio" id="abs" value="abs" class="inline" name="radio-group"> ABS</label>
+            <label for="Why?">Why?(Check all that apply)</label>
+            <label for="Safety"><input type="checkbox" id="Safety" value="safety" class="inline">Safety</a>
+            </label>
+            <label for="Convenience"><input type="checkbox" id="Convenience" value="convenience" class="inline">Convenience</a>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="comments">Any comments or suggestions?
+            <textarea id="bio" cols="30" rows="3" placeholder="Enter comments....."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+    </form>  
+</body>
+</html>
